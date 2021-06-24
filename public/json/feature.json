@@ -1,0 +1,21 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "label": "水蜜桃",
+      "image": "/feature/feature1.jpg"
+    },
+    {
+      "label": "大李子",
+      "image": "/feature/feature2.jpg"
+    },
+    {
+      "label": "大樱桃",
+      "image": "/feature/feature3.jpg"
+    },
+    {
+      "label": "金枕琉璃",
+      "image": "/feature/feature4.jpg"
+    }
+  ]
+}

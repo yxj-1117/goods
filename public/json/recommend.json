@@ -1,0 +1,21 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "label": "华为手机",
+      "image": "/recommend/recommend1.jpg"
+    },
+    {
+      "label": "华为手表",
+      "image": "/recommend/recommend2.jpg"
+    },
+    {
+      "label": "华为智能",
+      "image": "/recommend/recommend3.jpg"
+    },
+    {
+      "label": "华为电脑",
+      "image": "/recommend/recommend4.jpg"
+    }
+  ]
+}
