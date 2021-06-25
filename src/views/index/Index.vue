@@ -9,8 +9,12 @@
       <div class="index-best-sellers">本周热卖</div>
       <feature-view :featurelist="featurelist"></feature-view>
     </div>
-    <tab-control class="index-tab-control" :tabTitles="tabTitles"></tab-control>
-    <goods-list :goodsBox="goodsBox['huawei']"></goods-list>
+    <tab-control
+      class="index-tab-control"
+      :tabTitles="tabTitles"
+      @clickTab="clickTab"
+    ></tab-control>
+    <goods-list :goodsBox="showGoods"></goods-list>
   </div>
 </template>
 <script>
@@ -50,13 +54,18 @@ export default {
           label: "精选",
         },
       ],
+      tabType: "huawei",
       goodsBox: {}, //商品
     };
   },
   created() {
     this.init();
   },
-  computed: {},
+  computed: {
+    showGoods() {
+      return this.goodsBox[this.tabType];
+    },
+  },
   methods: {
     init() {
       this.bannersList = [];
@@ -77,12 +86,20 @@ export default {
           this.featurelist = res.data;
         }
       });
+      this.getGoods();
+    },
+    getGoods() {
       this.goodsBox = new Object();
       goods().then((res) => {
         if (res.code === 200) {
           this.goodsBox = res.data;
         }
       });
+    },
+    clickTab(index) {
+      this.getGoods();
+      let arr = ["huawei", "fruits", "selected"];
+      this.tabType = arr[index];
     },
   },
 };

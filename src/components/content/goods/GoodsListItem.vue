@@ -31,13 +31,14 @@ export default {
 <style scoped>
 img {
   width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 .item-info {
   padding: 5px 5px 10px;
   box-sizing: border-box;
 }
 .item-title {
-  font-size: 14px;
+  font-size: 12px;
   color: #000;
   margin-bottom: 5px;
 }
@@ -51,7 +52,7 @@ img {
   margin-right: 10px;
 }
 .item-salesVolume {
-  font-size: 8px;
+  font-size: 6px;
   color: #949494;
 }
 </style>

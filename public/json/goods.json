@@ -43,21 +43,21 @@
         "id": 2,
         "title": "广东乐昌九峰山黄金奈李子 新鲜水果现摘恐龙蛋冰糖蜂蜜脱骨整6斤",
         "image": "/goods/fruits2.jpg",
-        "price": "12.80-85.80",
+        "price": "12.80",
         "salesVolume": "500+"
       },
       {
         "id": 3,
         "title": "四川汉源车厘子黑珍珠新鲜水果包邮大樱桃现货特大果顺丰4斤汶川",
         "image": "/goods/fruits3.jpg",
-        "price": "185.00-195.00",
+        "price": "185.00",
         "salesVolume": 260
       },
       {
         "id": 4,
         "title": "读鲜马来西亚猫山王榴莲新鲜冷冻带壳进口整果水果冰榴莲正宗D197",
         "image": "/goods/fruits4.jpg",
-        "price": "138.00-1530.00",
+        "price": "138.00",
         "salesVolume": "1000+"
       }
     ],
@@ -66,28 +66,28 @@
         "id": 1,
         "title": "当天发【24期免息 送原装无线充】Huawei/华为Mate 40 RS保时捷设计手机 官方旗舰店官网正X2 鸿蒙HarmonyOS",
         "image": "/goods/huawei1.jpg",
-        "price": "11888.00-11998.00",
+        "price": "11888.00",
         "salesVolume": "200+"
       },
       {
         "id": 2,
         "title": "四川汉源车厘子黑珍珠新鲜水果包邮大樱桃现货特大果顺丰4斤汶川",
         "image": "/goods/fruits3.jpg",
-        "price": "185.00-195.00",
+        "price": "185.00",
         "salesVolume": 260
       },
       {
         "id": 3,
         "title": "新品上市华为笔记本电脑matebook 16 英寸2021款R5锐龙R7八核轻薄便携商务办公学生学习设计网课游戏手提电脑",
         "image": "/goods/huawei4.jpg",
-        "price": "5899.00-7999.00",
+        "price": "5899.00",
         "salesVolume": "200+"
       },
       {
         "id": 4,
         "title": "广东乐昌九峰山黄金奈李子 新鲜水果现摘恐龙蛋冰糖蜂蜜脱骨整6斤",
         "image": "/goods/fruits2.jpg",
-        "price": "12.80-85.80",
+        "price": "12.80",
         "salesVolume": "500+"
       },
       {
@@ -101,7 +101,7 @@
         "id": 6,
         "title": "读鲜马来西亚猫山王榴莲新鲜冷冻带壳进口整果水果冰榴莲正宗D197",
         "image": "/goods/fruits4.jpg",
-        "price": "138.00-1530.00",
+        "price": "138.00",
         "salesVolume": "1000+"
       }
     ]
