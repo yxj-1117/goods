@@ -1,6 +1,7 @@
 <template>
   <div id="swiper-box">
     <div
+      ref="swiper"
       class="swiper"
       @touchstart="touchStart"
       @touchmove="touchMove"
@@ -120,7 +121,7 @@ export default {
      */
     handleDom: function () {
       // 1.获取要操作的元素
-      let swiperEl = document.querySelector(".swiper");
+      let swiperEl = this.$refs.swiper;
       let slidesEls = swiperEl.getElementsByClassName("slide");
       // 2.保存个数
       this.slideCount = slidesEls.length;

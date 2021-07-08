@@ -1,12 +1,13 @@
 <template>
   <div class="feature-box">
     <div class="feature-item" v-for="(item, index) in featurelist" :key="index">
-      <img :src="$store.state.imageUrl + item.image" alt="" />
+      <img :src="imageUrl + item.image" alt="" />
       <div>{{ item.label }}</div>
     </div>
   </div>
 </template>
 <script>
+import { imageUrl } from "common/env";
 export default {
   props: {
     featurelist: {
@@ -17,7 +18,9 @@ export default {
     },
   },
   data() {
-    return {};
+    return {
+      imageUrl: imageUrl,
+    };
   },
   created() {},
   computed: {},

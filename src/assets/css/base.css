@@ -9,6 +9,7 @@
   --color-background: #fff;
   --font-size: 14px;
   --line-height: 1.5;
+  --text-decoration: line-through
 }
 
 *,
@@ -56,9 +57,11 @@ a {
   float: right;
 }
 
-/*
-*省略号
-*/
+/* 文字删除线 */
+.text-de{
+  text-decoration: line-through;
+}
+/* 溢出省略号 */
 .ellipsis{
   overflow: hidden;
   text-overflow: ellipsis;
@@ -81,4 +84,77 @@ a {
   overflow: hidden;/* 关键属性 */
   text-overflow:ellipsis;/* 超出内容显示省
   略号*/
+}
+/*
+*弹性布局
+*/
+.flex-ctr {
+  display: flex;
+  align-items: center;
+}
+.flex-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-ctr-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-ctr-wrap-hidden {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.flex-btn-ctr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-around-ctr {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.flex-col-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/*
+*右箭头
+*/
+.right-arrow {
+  width: 10px;
+  height: 10px;
+}
+/*
+* 边距
+*/
+.mgn_r5 {
+  margin-right: 5px;
+}
+/*
+* 字体大小
+*/
+
+.fs12 {
+  font-size: 12px;
+}
+.font14 {
+  font-size: 14px;
+}
+/*
+ *字体颜色
+*/
+.col-b9b7b7 {
+  color: #b9b7b7;
+}
+.col-ff8198 {
+  color: #ff8198;
+}
+
+.border-b {
+  border-bottom: 1px solid #f5f5f5;
 }

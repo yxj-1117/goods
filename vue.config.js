@@ -3,6 +3,7 @@ module.exports = {
     resolve: {
       // 配置别名
       alias: {
+        'api': '@/api',
         'assets': '@/assets',
         'common': '@/common',
         'components': '@/components',

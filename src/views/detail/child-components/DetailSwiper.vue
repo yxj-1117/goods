@@ -1,18 +1,19 @@
 <template>
   <swiper>
-    <swiper-item v-for="(item, index) in bannersList" :key="index">
+    <swiper-item v-for="(item, index) in topBanners" :key="index">
       <a href="">
-        <img :src="imageUrl + item.url" alt="" @load="swiperLoad" />
+        <img :src="imageUrl + item" alt="" @load="swiperLoad" />
       </a>
     </swiper-item>
   </swiper>
 </template>
 <script>
 import { Swiper, SwiperItem } from "components/common/swiper";
+
 import { imageUrl } from "common/env";
 export default {
   props: {
-    bannersList: {
+    topBanners: {
       type: Array,
       default() {
         return [];
@@ -25,8 +26,8 @@ export default {
   },
   data() {
     return {
-      isLoad: false,
       imageUrl: imageUrl,
+      isLoad: false,
     };
   },
   created() {},

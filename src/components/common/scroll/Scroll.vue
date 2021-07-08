@@ -28,11 +28,16 @@ export default {
   computed: {},
   methods: {
     scrollTo(x, y, time = 500) {
-      this.scroll.scrollTo(x, y, time);
+      this.scroll && this.scroll.scrollTo(x, y, time);
     },
     // 可以进行多次上拉加载
     finishPullUp() {
-      this.scroll.finishPullUp();
+      this.scroll && this.scroll.finishPullUp();
+    },
+    // 3.重新计算scroll内容位置 -- 监听item图片加载完成
+    refresh() {
+      // console.log("监听图片加载完成");
+      this.scroll && this.scroll.refresh();
     },
   },
   mounted() {
@@ -42,14 +47,19 @@ export default {
       probeType: this.probeType,
       pullUpLoad: this.pullUpLoad,
     });
-    // 2.监听滚动的位置  -- probeType
-    this.scroll.on("scroll", (position) => {
-      this.$emit("scroll", position);
-    });
-    // 3.监听上拉加载更多事件  -- pullUpLoad
-    this.scroll.on("pullingUp", () => {
-      this.$emit("pullingUp");
-    });
+    // 2.监听滚动的位置  -- probeType = 2、probeType = 3
+    if (this.probeType == 2 || this.probeType == 3) {
+      this.scroll.on("scroll", (position) => {
+        this.$emit("scroll", position);
+      });
+    }
+    // 3.监听scroll滚动到底部
+    if (this.pullUpLoad) {
+      this.scroll.on("pullingUp", () => {
+        // console.log("监听滚动到底部");
+        this.$emit("pullingUp");
+      });
+    }
   },
 };
 </script>

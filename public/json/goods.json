@@ -33,28 +33,28 @@
     ],
     "fruits": [
       {
-        "id": 1,
+        "id": 5,
         "title": "【桂味现货】岭南佳果新鲜现摘现发荔枝水果顺丰空运5斤礼盒送礼",
         "image": "/goods/fruits1.jpg",
         "price": "298.00",
         "salesVolume": "1000+"
       },
       {
-        "id": 2,
+        "id": 6,
         "title": "广东乐昌九峰山黄金奈李子 新鲜水果现摘恐龙蛋冰糖蜂蜜脱骨整6斤",
         "image": "/goods/fruits2.jpg",
         "price": "12.80",
         "salesVolume": "500+"
       },
       {
-        "id": 3,
+        "id": 7,
         "title": "四川汉源车厘子黑珍珠新鲜水果包邮大樱桃现货特大果顺丰4斤汶川",
         "image": "/goods/fruits3.jpg",
         "price": "185.00",
         "salesVolume": 260
       },
       {
-        "id": 4,
+        "id": 8,
         "title": "读鲜马来西亚猫山王榴莲新鲜冷冻带壳进口整果水果冰榴莲正宗D197",
         "image": "/goods/fruits4.jpg",
         "price": "138.00",
@@ -70,35 +70,35 @@
         "salesVolume": "200+"
       },
       {
-        "id": 2,
+        "id": 7,
         "title": "四川汉源车厘子黑珍珠新鲜水果包邮大樱桃现货特大果顺丰4斤汶川",
         "image": "/goods/fruits3.jpg",
         "price": "185.00",
         "salesVolume": 260
       },
       {
-        "id": 3,
+        "id": 4,
         "title": "新品上市华为笔记本电脑matebook 16 英寸2021款R5锐龙R7八核轻薄便携商务办公学生学习设计网课游戏手提电脑",
         "image": "/goods/huawei4.jpg",
         "price": "5899.00",
         "salesVolume": "200+"
       },
       {
-        "id": 4,
+        "id": 6,
         "title": "广东乐昌九峰山黄金奈李子 新鲜水果现摘恐龙蛋冰糖蜂蜜脱骨整6斤",
         "image": "/goods/fruits2.jpg",
         "price": "12.80",
         "salesVolume": "500+"
       },
       {
-        "id": 5,
+        "id": 3,
         "title": "华为智选哈尔斯水杯智能保温杯450ML茶水分离水杯子316不锈钢男女",
         "image": "/goods/huawei3.jpg",
         "price": "109.00",
         "salesVolume": 51
       },
       {
-        "id": 6,
+        "id": 8,
         "title": "读鲜马来西亚猫山王榴莲新鲜冷冻带壳进口整果水果冰榴莲正宗D197",
         "image": "/goods/fruits4.jpg",
         "price": "138.00",

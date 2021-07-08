@@ -23,11 +23,6 @@ export default {
 </script>
 <style scoped>
 .nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
   display: flex;
   line-height: 44px;
   height: 44px;
@@ -36,6 +31,7 @@ export default {
 .nav-bar-left,
 .nav-bar-right {
   width: 60px;
+  height: 100%;
 }
 .nav-bar .nav-bar-center {
   flex: 1;

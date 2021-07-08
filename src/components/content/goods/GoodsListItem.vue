@@ -1,6 +1,6 @@
 <template>
-  <div class="goods-list-item">
-    <img :src="$store.state.imageUrl + goodsItem.image" alt="" />
+  <div class="goods-list-item" @click="handerDetail">
+    <img :src="imageUrl + goodsItem.image" alt="" @load="imageLoad" />
     <div class="item-info">
       <div class="item-title ellipsis">{{ goodsItem.title }}</div>
       <div class="item-content">
@@ -11,6 +11,7 @@
   </div>
 </template>
 <script>
+import { imageUrl } from "common/env";
 export default {
   props: {
     goodsItem: {
@@ -21,11 +22,20 @@ export default {
     },
   },
   data() {
-    return {};
+    return {
+      imageUrl: imageUrl,
+    };
   },
   created() {},
   computed: {},
-  methods: {},
+  methods: {
+    imageLoad() {
+      this.$bus.$emit("itemImageLoad");
+    },
+    handerDetail() {
+      this.$router.push("/detail/" + this.goodsItem.id);
+    },
+  },
 };
 </script>
 <style scoped>

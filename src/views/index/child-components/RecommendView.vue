@@ -5,12 +5,13 @@
       v-for="(item, index) in recommendList"
       :key="index"
     >
-      <img :src="$store.state.imageUrl + item.image" alt="" />
+      <img :src="imageUrl + item.image" alt="" />
       <div>{{ item.label }}</div>
     </div>
   </div>
 </template>
 <script>
+import { imageUrl } from "common/env";
 export default {
   props: {
     recommendList: {
@@ -21,7 +22,9 @@ export default {
     },
   },
   data() {
-    return {};
+    return {
+      imageUrl: imageUrl,
+    };
   },
   created() {},
   computed: {},

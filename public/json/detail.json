@@ -1,0 +1,157 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "id": 1,
+      "banner": [
+        "/goods/huawei1.jpg",
+        "/goods/huawei1.jpg",
+        "/goods/huawei1.jpg"
+      ],
+      "itemInfo": {
+        "title": "当天发【24期免息 送原装无线充】Huawei/华为Mate 40 RS保时捷设计手机 官方旗舰店官网正X2 鸿蒙HarmonyOS",
+        "price": 11888.00,
+        "oldPrice": 12888.00,
+        "discountDesc": "活动价"
+      },
+      "columns": [
+        "销量 200+",
+        "收藏33人",
+        "退货补运费 "
+      ]
+    },
+    {
+      "id": 2,
+      "banner": [
+        "/goods/huawei2.jpg",
+        "/goods/huawei2.jpg",
+        "/goods/huawei2.jpg"
+      ],
+      "itemInfo": {
+        "title": "荣耀手表2Magic Watch3智能运动电话男士魔法系列移动支付多功能女款防水旗舰店官方正品适用华为小米gt2 Pro",
+        "price": 699.00,
+        "oldPrice": 799.00,
+        "discountDesc": "优惠价"
+      },
+      "columns": [
+        "销量 2000+",
+        "收藏305人",
+        "默认快递"
+      ]
+    },
+    {
+      "id": 3,
+      "banner": [
+        "/goods/huawei3.jpg",
+        "/goods/huawei3.jpg",
+        "/goods/huawei3.jpg"
+      ],
+      "itemInfo": {
+        "title": "华为智选哈尔斯水杯智能保温杯450ML茶水分离水杯子316不锈钢男女",
+        "price": 109.00,
+        "oldPrice": 139.00,
+        "discountDesc": "今日特价"
+      },
+      "columns": [
+        "销量 51",
+        "收藏3人",
+        "默认快递"
+      ]
+    },
+    {
+      "id": 4,
+      "banner": [
+        "/goods/huawei4.jpg",
+        "/goods/huawei4.jpg",
+        "/goods/huawei4.jpg"
+      ],
+      "itemInfo": {
+        "title": "新品上市华为笔记本电脑matebook 16 英寸2021款R5锐龙R7八核轻薄便携商务办公学生学习设计网课游戏手提电脑",
+        "price": 5899.00,
+        "oldPrice": 5999.00,
+        "discountDesc": "今日特价"
+      },
+      "columns": [
+        "销量 200+",
+        "收藏11人",
+        "默认快递"
+      ]
+    },
+    {
+      "id": 5,
+      "banner": [
+        "/goods/fruits1.jpg",
+        "/goods/fruits1.jpg",
+        "/goods/fruits1.jpg"
+      ],
+      "itemInfo": {
+        "title": "【桂味现货】岭南佳果新鲜现摘现发荔枝水果顺丰空运5斤礼盒送礼",
+        "price": 298.00,
+        "oldPrice": 319.00,
+        "discountDesc": "今日特价"
+      },
+      "columns": [
+        "销量 1000+",
+        "收藏110人",
+        "默认快递"
+      ]
+    },
+    {
+      "id": 6,
+      "banner": [
+        "/goods/fruits2.jpg",
+        "/goods/fruits2.jpg",
+        "/goods/fruits2.jpg"
+      ],
+      "itemInfo": {
+        "title": "广东乐昌九峰山黄金奈李子 新鲜水果现摘恐龙蛋冰糖蜂蜜脱骨整6斤",
+        "price": 12.8,
+        "oldPrice": 13.8,
+        "discountDesc": "今日特价"
+      },
+      "columns": [
+        "销量 500+",
+        "收藏53人",
+        "默认快递"
+      ]
+    },
+    {
+      "id": 7,
+      "banner": [
+        "/goods/fruits3.jpg",
+        "/goods/fruits3.jpg",
+        "/goods/fruits3.jpg"
+      ],
+      "itemInfo": {
+        "title": "四川汉源车厘子黑珍珠新鲜水果包邮大樱桃现货特大果顺丰4斤汶川",
+        "price": 185.00,
+        "oldPrice": 199.00,
+        "discountDesc": "今日特价"
+      },
+      "columns": [
+        "销量 260",
+        "收藏46人",
+        "默认快递"
+      ]
+    },
+    {
+      "id": 8,
+      "banner": [
+        "/goods/fruits4.jpg",
+        "/goods/fruits4.jpg",
+        "/goods/fruits4.jpg"
+      ],
+      "itemInfo": {
+        "title": "读鲜马来西亚猫山王榴莲新鲜冷冻带壳进口整果水果冰榴莲正宗D197",
+        "price": 138.00,
+        "oldPrice": 148.00,
+        "discountDesc": "今日特价"
+      },
+      "columns": [
+        "销量 1000+",
+        "收藏189人",
+        "默认快递"
+      ]
+    }
+  ]
+}
