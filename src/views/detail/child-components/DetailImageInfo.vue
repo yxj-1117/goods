@@ -1,26 +1,41 @@
 <template>
   <div>
-    <div class="detail-describe">宝贝描述</div>
+    <img
+      v-for="(item, index) in detailImageInfo"
+      :key="index"
+      :src="imageUrl + item"
+      alt=""
+      @load="imageLoad"
+    />
   </div>
 </template>
 <script>
+import { imageUrl } from "common/env";
 export default {
+  props: {
+    detailImageInfo: {
+      type: Array,
+      default() {
+        return [];
+      },
+    },
+  },
   data() {
-    return {};
+    return {
+      imageUrl: imageUrl,
+    };
   },
   created() {},
   computed: {},
-  methods: {},
+  methods: {
+    imageLoad() {
+      this.$emit("detailImageInfoLoad");
+    },
+  },
 };
 </script>
 <style scoped>
-.detail-describe {
-  height: 100vh;
+img {
   width: 100%;
-  padding: 0 10px;
-  box-sizing: border-box;
-  background-color: #fff;
-  border-radius: 10px;
-  margin-bottom: 10px;
 }
 </style>

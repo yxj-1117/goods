@@ -1,5 +1,5 @@
 <template>
-  <div
+  <!-- <div
     class="goods-box"
     v-masonry
     transition-duration="0.3s"
@@ -10,12 +10,12 @@
     <div class="goods-list-li" v-for="(item, index) in goodsBox" :key="index">
       <goods-list-item v-masonry-tile :goods-item="item" />
     </div>
-  </div>
-  <!-- <div class="goods-box">
+  </div> -->
+  <div class="goods-box">
     <div class="goods-list-li" v-for="(item, index) in goodsBox" :key="index">
       <goods-list-item :goods-item="item" />
     </div>
-  </div> -->
+  </div>
 </template>
 <script>
 import GoodsListItem from "./GoodsListItem";

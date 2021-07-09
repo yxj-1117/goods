@@ -1,6 +1,8 @@
 <template>
   <div class="goods-list-item" @click="handerDetail">
-    <img :src="imageUrl + goodsItem.image" alt="" @load="imageLoad" />
+    <div class="goods-list-img">
+      <img :src="imageUrl + goodsItem.image" alt="" @load="imageLoad" />
+    </div>
     <div class="item-info">
       <div class="item-title ellipsis">{{ goodsItem.title }}</div>
       <div class="item-content">
@@ -33,12 +35,19 @@ export default {
       this.$bus.$emit("itemImageLoad");
     },
     handerDetail() {
-      this.$router.push("/detail/" + this.goodsItem.id);
+      if (this.$route.path.indexOf("/detail") !== 0) {
+        this.$router.push("/detail/" + this.goodsItem.id);
+      }
     },
   },
 };
 </script>
 <style scoped>
+.goods-list-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
 img {
   width: 100%;
   border-radius: 5px 5px 0 0;

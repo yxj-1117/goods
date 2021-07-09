@@ -46,11 +46,9 @@ import NavBar from "components/common/nav-bar/NavBar";
 import Scroll from "components/common/scroll/Scroll";
 import TabControl from "components/content/tab-control/TabControl";
 import GoodsList from "components/content/goods/GoodsList";
-import BackTop from "components/content/back-top/BackTop";
+import { itemListenerMixin, backTopMixin } from "common/mixin";
 
 import { banners, recommend, feature, goods } from "api";
-
-import { debounce } from "common/utils";
 
 export default {
   components: {
@@ -61,8 +59,8 @@ export default {
     Scroll,
     TabControl,
     GoodsList,
-    BackTop,
   },
+  mixins: [itemListenerMixin, backTopMixin], //混入
   data() {
     return {
       bannersList: [], //轮播图
@@ -134,10 +132,6 @@ export default {
       this.$refs.tabControl1.currentIndex = index;
       this.$refs.tabControl2.currentIndex = index;
     },
-    // 回到顶部 -- 点击返回顶部的图标
-    clickBackTop() {
-      this.$refs.scroll.scrollTo(0, 0);
-    },
     // scroll内容滚动
     contentScroll(position) {
       // 1.判断backTopImg是否显示
@@ -148,27 +142,19 @@ export default {
     },
     // 上拉加载更多
     loadMore() {
-      goods().then((res) => {
-        if (res.code === 200) {
-          this.goodsBox[this.tabType] = this.goodsBox[this.tabType].concat(
-            res.data[this.tabType]
-          );
-          this.$refs.scroll.finishPullUp();
-        }
-      });
+      // goods().then((res) => {
+      //   if (res.code === 200) {
+      //     this.goodsBox[this.tabType] = this.goodsBox[this.tabType].concat(
+      //       res.data[this.tabType]
+      //     );
+      //     this.$refs.scroll.finishPullUp();
+      //   }
+      // });
     },
     // 获取tabControl的tabOffSetTop
     swiperImageLoad() {
       this.tabOffSetTop = this.$refs.tabControl2.$el.offsetTop;
     },
-  },
-  mounted() {
-    // 监听图片加载完成
-    const refresh = debounce(this.$refs.scroll.refresh, 100);
-    this.$bus.$on("itemImageLoad", () => {
-      // console.log("图片加载完成");
-      refresh();
-    });
   },
   // 销毁
   destroyed() {
@@ -182,6 +168,7 @@ export default {
   // 离开
   deactivated() {
     this.saveY = this.$refs.scroll.scroll.y;
+    this.$bus.$off("itemImageLoad", this.itemImgListener);
   },
 };
 </script>

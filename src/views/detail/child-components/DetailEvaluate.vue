@@ -31,7 +31,7 @@
     <div class="detail-shop">
       <div class="shop-info flex-btn">
         <div class="flex-ctr">
-          <img class="shop-logo" src="~assets/img/index/back-top .png" alt="" />
+          <img class="shop-logo" src="~assets/img/index/shop.png" alt="" />
           <div class="flex-col-btn" style="height: 40px">
             <div class="shop-name fs14">XXXX店</div>
             <div class="shop-tip">精选</div>

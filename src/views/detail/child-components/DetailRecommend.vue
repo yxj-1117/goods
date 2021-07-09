@@ -1,10 +1,20 @@
 <template>
-  <div>
-    <div class="detail-describe">推荐产品</div>
-  </div>
+  <goods-list :goods-box="detailRecommend" />
 </template>
 <script>
+import GoodsList from "components/content/goods/GoodsList";
 export default {
+  props: {
+    detailRecommend: {
+      type: Array,
+      default() {
+        return [];
+      },
+    },
+  },
+  components: {
+    GoodsList,
+  },
   data() {
     return {};
   },

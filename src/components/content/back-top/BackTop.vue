@@ -26,6 +26,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px 1px rgb(218, 215, 215);
 }
 .back-top-img img {
   width: 25px;

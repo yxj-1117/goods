@@ -89,20 +89,6 @@
         "image": "/goods/fruits2.jpg",
         "price": "12.80",
         "salesVolume": "500+"
-      },
-      {
-        "id": 3,
-        "title": "华为智选哈尔斯水杯智能保温杯450ML茶水分离水杯子316不锈钢男女",
-        "image": "/goods/huawei3.jpg",
-        "price": "109.00",
-        "salesVolume": 51
-      },
-      {
-        "id": 8,
-        "title": "读鲜马来西亚猫山王榴莲新鲜冷冻带壳进口整果水果冰榴莲正宗D197",
-        "image": "/goods/fruits4.jpg",
-        "price": "138.00",
-        "salesVolume": "1000+"
       }
     ]
   }
