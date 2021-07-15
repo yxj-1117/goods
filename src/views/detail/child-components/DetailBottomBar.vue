@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="bottom-bar-right flex-ctr">
-        <div class="bottom-bar-btn-left">
+        <div class="bottom-bar-btn-left" @click="addToCart">
           <div class="fs14">加入购物车</div>
         </div>
         <div class="bottom-bar-btn-right">
@@ -33,7 +33,11 @@ export default {
   },
   created() {},
   computed: {},
-  methods: {},
+  methods: {
+    addToCart() {
+      this.$emit("addToCart");
+    },
+  },
 };
 </script>
 <style scoped>

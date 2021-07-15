@@ -21,7 +21,7 @@
       </div>
       <detail-recommend :detail-recommend="detailRecommend" ref="recommend" />
     </scroll>
-    <detail-bottom />
+    <detail-bottom @addToCart="addToCart" />
     <back-top @click.native="clickBackTop" v-if="isShowBackTopImg" />
   </div>
 </template>
@@ -118,10 +118,19 @@ export default {
       // 1.判断backTopImg是否显示
       this.isShowBackTopImg = positionY > 300;
     },
-    // 商品详情
+    // 商品详情 -- 计算图片渲染
     detailImageInfoLoad() {
       this.newRefresh();
       this.getThemeTopY();
+    },
+    // 加入购物车 -- 点击
+    addToCart() {
+      let product = {};
+      let itemInfo = this.goodsDetail.itemInfo;
+      product = itemInfo;
+      product.id = this.id;
+      delete product.discountDesc;
+      this.$store.commit("addCart", product);
     },
   },
   destroyed() {
